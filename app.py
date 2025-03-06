@@ -102,12 +102,12 @@ if 'profile' not in st.session_state:
                 "testimonials": [
                     {
                         "text": "Eugene demonstrates exceptional problem-solving skills in software development.",
-                        "author": "Dr. Jean Paul",
+                        "author": "Yollam",
                         "role": "Project Supervisor"
                     },
                     {
                         "text": "Great team player with strong technical capabilities.",
-                        "author": "Marie Claire",
+                        "author": "Laurene",
                         "role": "Course Instructor"
                     }
                 ],
@@ -190,12 +190,12 @@ if 'profile' not in st.session_state:
             "testimonials": [
                 {
                     "text": "Eugene demonstrates exceptional problem-solving skills in software development.",
-                    "author": "Dr. Jean Paul",
+                    "author": "Yollam",
                     "role": "Project Supervisor"
                 },
                 {
                     "text": "Great team player with strong technical capabilities.",
-                    "author": "Marie Claire",
+                    "author": "Laurene",
                     "role": "Course Instructor"
                 }
             ],
