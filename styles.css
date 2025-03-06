@@ -1,0 +1,369 @@
+/* Base styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Form styling */
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+/* Custom components */
+.achievement-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #4caf50;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #f5f5f5);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.profile-card img {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-card img:hover {
+  transform: scale(1.02);
+}
+
+.main-header {
+  background: linear-gradient(135deg, #1a237e, #0288d1);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline styles */
+.timeline-item {
+  display: flex;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-left: 3px solid var(--primary-color);
+  background: white;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+/* Testimonial styles */
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.role {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Project card enhancements */
+.tech-tag {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem;
+  background: #f0f0f0;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.github-link:hover {
+  background: #1a1f23;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contact page specific styles */
+.contact-header {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  text-align: center;
+  padding: 3rem !important;
+}
+
+.contact-form-card {
+  background: white;
+  padding: 2rem !important;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-links-card {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.social-link:hover {
+  transform: translateX(10px);
+}
+
+.social-link i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+.github {
+  background: #24292e;
+}
+.twitter {
+  background: #1da1f2;
+}
+.email {
+  background: #ea4335;
+}
+
+.location-info,
+.availability-status {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-links {
+    gap: 0.5rem;
+  }
+
+  .social-link {
+    padding: 0.8rem;
+  }
+}
+
+/* Enhanced Project Cards */
+.project-header {
+  background: linear-gradient(135deg, #1a237e, #0288d1);
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.project-type-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.project-year {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.tech-stack {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Updated Skill Cards */
+.skills-section {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+/* Profile Image Styles */
+.default-avatar {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+  border-radius: 15px;
+  color: #666;
+}
+
+[data-testid="stFileUploader"] {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px dashed #2193b0;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+  border-color: #6dd5ed;
+  background: rgba(33, 147, 176, 0.05);
+}
